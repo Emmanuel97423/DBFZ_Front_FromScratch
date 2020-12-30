@@ -1,0 +1,21 @@
+{
+  "name": "dbfz_front_fromscratch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "push": "git push https://github.com/Emmanuel97423/DBFZ_Front_FromScratch.git",
+    "sass": "sass --watch sass/main.scss style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emmanuel97423/DBFZ_Front_FromScratch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emmanuel97423/DBFZ_Front_FromScratch/issues"
+  },
+  "homepage": "https://github.com/Emmanuel97423/DBFZ_Front_FromScratch#readme"
+}

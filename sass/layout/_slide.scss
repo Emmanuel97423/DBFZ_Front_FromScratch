@@ -1,5 +1,6 @@
 
 .slide {
+    
     background: rgba(22, 8, 105, 0.933);
     background-image: linear-gradient(rgba(255, 230, 4, 0.5), rgba(18, 4, 153, 0.5)), url('../img/background-slide.jpg');
     background-size: cover;
@@ -7,7 +8,7 @@
     background-position: center;
     display: grid;
     grid-template-columns: 50px 1fr 1fr 50px;
-    grid-template-rows: 50px auto auto 50px;
+    grid-template-rows: 150px auto auto 50px;
     justify-items: center;
     padding-bottom: 7em;
     &__img {
@@ -28,7 +29,8 @@
             grid-row-end: 4;
             align-self: center;
             justify-self: center;
-            margin-top: -100px;
+            margin-top: -90px;
+  
             
              }    
         &__video {
@@ -52,7 +54,7 @@ h1 {
     font-size: 50px;
     color:white;
     text-transform:uppercase;
-    margin: 50px 0 65px 0;
+    margin: 45px 0 40px 0;
     
 }
 #indian-ocean {

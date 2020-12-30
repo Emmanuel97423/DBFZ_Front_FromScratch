@@ -12,7 +12,7 @@ button {
   grid-column-start: 2;
   grid-column-end: 3;
   justify-self: center;
-  padding: 15px 80px 15px 80px;
+  padding: 15px 80px 3px 80px;
   background: inherit;
   border: 1px solid white;
   border-radius: 30px;
@@ -21,10 +21,38 @@ button {
   cursor: pointer;
 }
 
-.button__reglement {
+.slide__buttons {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+.slide__buttons .button__reglement {
+  display: flex;
   justify-self: end;
+  justify-content: space-between;
+}
+.slide__buttons .button__reglement img {
+  transform: translate(-20px, -5px);
+  width: 35px;
+}
+
+.bottom__button {
+  display: flex;
+  justify-self: center;
+  justify-content: space-between;
+}
+.bottom__button img {
+  transform: translate(-20px, -5px);
+  width: 35px;
+}
+
+.gif {
+  width: 170px;
+  margin: 0 auto;
+}
+.gif img {
+  text-align: center;
+  width: 180px;
 }
 
 *, ::before, ::after {
@@ -365,28 +393,68 @@ article {
   color: #ff660e;
 }
 
-nav a {
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 10px 100px 10px 10px;
+  transition: 0.8s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  position: relative;
+  float: left;
+}
+nav .logo img {
+  margin: 100px 0 0 0;
+  transition: 0.5s;
+}
+
+nav ul {
+  float: right;
+  margin: 10px 10px 10px 10px;
+  padding: 0px;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+  list-style: none;
+}
+
+nav ul li a {
+  position: relative;
+  list-style: 80px;
+  color: white;
+  padding: 15px 20px;
   text-decoration: none;
-  color: grey;
-  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 2px;
 }
-nav > ol {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
+
+nav ul li a.active, nav ul li a:hover {
+  color: black;
+  background-color: yellow;
 }
-nav > ol > li {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  justify-items: center;
-  padding: 15px 15px 15px 15px;
+
+nav.sticky {
+  background-color: #18255A;
+}
+
+.logo__small img {
+  width: 150px;
+  transition-delay: 2s;
 }
 
 footer {
   display: grid;
-  grid-template-columns: 10px 4.9% auto auto auto 20% 10px;
+  grid-template-columns: 50px 4.9% auto auto auto 20% 50px;
   grid-template-rows: 100px 90px 10px;
   justify-items: center;
 }
@@ -435,18 +503,6 @@ footer .bottom__menu ol li, footer .bottom__menu ol a {
   text-decoration: none;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 70% 30%;
-  background-color: white;
-  height: 50px;
-  box-shadow: 0px 0.5px 20px rgba(0, 0, 0, 0.2);
-}
-
-.logo img {
-  width: 150px;
-}
-
 .slide {
   background: rgba(22, 8, 105, 0.933);
   background-image: linear-gradient(rgba(255, 230, 4, 0.5), rgba(18, 4, 153, 0.5)), url("../img/background-slide.jpg");
@@ -455,7 +511,7 @@ header {
   background-position: center;
   display: grid;
   grid-template-columns: 50px 1fr 1fr 50px;
-  grid-template-rows: 50px auto auto 50px;
+  grid-template-rows: 150px auto auto 50px;
   justify-items: center;
   padding-bottom: 7em;
 }
@@ -476,7 +532,7 @@ header {
   grid-row-end: 4;
   align-self: center;
   justify-self: center;
-  margin-top: -100px;
+  margin-top: -90px;
 }
 .slide__video {
   grid-column-start: 3;
@@ -493,7 +549,7 @@ h1 {
   font-size: 50px;
   color: white;
   text-transform: uppercase;
-  margin: 50px 0 65px 0;
+  margin: 45px 0 40px 0;
 }
 
 #indian-ocean {
