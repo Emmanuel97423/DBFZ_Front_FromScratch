@@ -6,7 +6,7 @@ nav {
     height: 100px;
     padding:10px 100px 10px 10px;
     transition:0.8s;
-    
+    z-index: 1;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -32,12 +32,14 @@ nav ul li {
     list-style: none;
 }
 nav ul li a {
+   
     position: relative;
     list-style: 80px;
-    color:white;
+    color:rgba(255, 255, 255, 0.548);
     padding:15px 20px;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bold;
     transition: 0.5s;
     letter-spacing:2px;
 }
@@ -48,8 +50,21 @@ nav ul li a.active, nav ul li a:hover {
  nav.sticky {
      background-color:$color-bottom-box;
  }
+ //Animations
  .logo__small img {
-     width:150px;
-     transition-delay: 2s;
-   
+     animation-duration: 1s ;
+     animation-name: small-logo;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: normal;
+     animation-fill-mode: both;  
  }
+ @keyframes small-logo {
+     from {
+         width: 200px;
+     }
+     to {
+         width: 150px;
+     }
+ }
+
+ 
