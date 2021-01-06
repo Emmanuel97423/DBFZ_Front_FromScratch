@@ -1,0 +1,25 @@
+.banner {
+    grid-column-start:2;
+    grid-column-end: 6;
+    margin: 0 0 50px 0;
+    h3 {
+
+        font-size: 30px;
+        color: white;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 50px;
+        color:white;
+        text-transform: uppercase;
+    }
+    .banner__title--yellow {
+        color:$color-secondary;
+    }
+    p, i {
+        color: white;
+        padding:0 15px 0 0;
+        font-size: 15px;
+    }
+    
+}

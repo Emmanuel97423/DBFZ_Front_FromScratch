@@ -1,4 +1,4 @@
-const playerSelect = document.getElementById('players__box')
+const playerSelect = document.getElementById('player__name')
 
 fetch("https://mysterious-retreat-58171.herokuapp.com/eventEntrants")
 .then((response) =>{

@@ -45,10 +45,10 @@ nav ul li a {
 }
 nav ul li a.active, nav ul li a:hover {
     color:black;
-    background-color: yellow;
+    background-color: $color-button;
 }
  nav.sticky {
-     background-color:$color-bottom-box;
+     background-color:$color-primary;
  }
  //Animations
  .logo__small img {

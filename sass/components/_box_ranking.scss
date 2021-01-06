@@ -1,0 +1,29 @@
+.grid__infos {
+
+    color: $color-dark-blue;  
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:3;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 40px 40px 40px auto;
+    gap:10px 5px;
+    background-color:$color-secondary;
+    padding:20px;
+    box-shadow: $box-shadow;
+    justify-self:center;
+    align-self:center;
+    li {
+        font-weight: bold;
+        margin: 0 0 8px 0;
+        
+
+    }
+        .label {
+            font-weight: bold;
+        }
+        &--reglement--text, &--mode--text, &--system--text {
+            justify-self: start;
+        }
+ }

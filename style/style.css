@@ -74,7 +74,7 @@ button {
 }
 
 #bar--white {
-  background-color: #05082e;
+  background-color: #001d3d;
   width: 100%;
   height: 15px;
 }
@@ -130,7 +130,7 @@ article {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right 65% bottom 75px;
-  background-color: #18255A;
+  background-color: #003566;
   width: 100%;
   display: grid;
   height: 310px;
@@ -166,7 +166,7 @@ article {
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: #18255A;
+  background-color: #003566;
   margin: 0 -10px -10px -10px;
   padding: 10px;
   border-radius: 0 0 20px 20px;
@@ -224,7 +224,7 @@ article {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right 65% bottom 75px;
-  background-color: #18255A;
+  background-color: #003566;
   width: 100%;
   display: grid;
   height: 310px;
@@ -260,7 +260,7 @@ article {
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: #18255A;
+  background-color: #003566;
   margin: 0 -10px -10px -10px;
   padding: 10px;
   border-radius: 0 0 20px 20px;
@@ -319,7 +319,7 @@ article {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right 65% bottom 75px;
-  background-color: #18255A;
+  background-color: #003566;
   width: 100%;
   display: grid;
   height: 310px;
@@ -355,7 +355,7 @@ article {
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: #18255A;
+  background-color: #003566;
   margin: 0 -10px -10px -10px;
   padding: 10px;
   border-radius: 0 0 20px 20px;
@@ -454,11 +454,11 @@ nav ul li a {
 
 nav ul li a.active, nav ul li a:hover {
   color: black;
-  background-color: yellow;
+  background-color: #f5cc00;
 }
 
 nav.sticky {
-  background-color: #18255A;
+  background-color: #001d3d;
 }
 
 .logo__small img {
@@ -529,8 +529,8 @@ footer .bottom__menu ol li, footer .bottom__menu ol a {
 }
 
 .slide {
-  background: rgba(22, 8, 105, 0.933);
-  background-image: linear-gradient(rgba(255, 230, 4, 0.5), rgba(18, 4, 153, 0.5)), url("../img/background-slide.jpg");
+  background: #001d3d;
+  background-image: linear-gradient(rgba(239, 160, 11, 0.8), rgba(18, 4, 153, 0.5)), url("../img/background-slide.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -574,7 +574,7 @@ footer .bottom__menu ol li, footer .bottom__menu ol a {
 
 h1 {
   font-size: 20px;
-  color: yellow;
+  color: #efa00b;
   text-transform: uppercase;
   margin: 45px 0 40px 0;
 }
@@ -586,7 +586,7 @@ h1 {
 
 #championship {
   font-size: 75px;
-  color: yellow;
+  color: #efa00b;
 }
 
 #title__dragonball {
@@ -594,7 +594,7 @@ h1 {
 }
 
 body {
-  background-color: #18255A;
+  background-color: #001d3d;
 }
 
 .tournament__title h2 {
@@ -606,29 +606,117 @@ body {
 
 tournament {
   display: grid;
-  grid-template-columns: 40px auto auto 40px;
-  grid-template-rows: 20px auto auto auto auto auto auto 20px;
-}
-tournament img {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-template-columns: 150px 700px auto 400px 150px;
+  grid-template-rows: 20px 45px auto 20px;
+  gap: 40px;
+  background-image: linear-gradient(rgba(239, 160, 11, 0.8), rgba(18, 4, 153, 0.5)), url("../img/maxresdefault.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .live__stream--title {
+  grid-column-start: 2;
+  grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
+  width: 100%;
 }
-.live__stream--title > iframe {
-  grid-row-start: 4;
-  grid-row-end: 5;
-  background-color: red;
+.live__stream--title h3 {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
 }
 
-.live__stream--infos {
-  grid-row-start: 4;
-  grid-row-end: 5;
+iframe {
+  width: 100%;
+  height: 450px;
+}
+
+#player__checkin {
+  padding: 60px 0 0 20px;
+  background-color: #003566;
+  width: 100%;
+}
+
+.grid__player--title {
+  text-transform: uppercase;
+  color: white;
+}
+
+#output {
+  padding: 20px 100px 80px 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 60px 15px;
+  background-color: #003566;
+}
+#output p {
+  justify-self: start;
+  align-self: center;
+  font-weight: bold;
+  color: white;
+}
+#output img {
+  align-self: end;
+  align-self: end;
+  border-right: 1px solid white;
+  padding: 0 30px 0 0;
+  align-self: center;
+  width: 150px;
+}
+
+.grid__infos {
+  color: #000814;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 40px 40px 40px auto;
+  gap: 10px 5px;
+  background-color: #efa00b;
+  padding: 20px;
+  box-shadow: 4px 4px 14px 4px;
+  justify-self: center;
+  align-self: center;
+}
+.grid__infos li {
+  font-weight: bold;
+  margin: 0 0 8px 0;
+}
+.grid__infos .label {
+  font-weight: bold;
+}
+.grid__infos--reglement--text, .grid__infos--mode--text, .grid__infos--system--text {
+  justify-self: start;
+}
+
+.banner {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  margin: 0 0 50px 0;
+}
+.banner h3 {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+}
+.banner h2 {
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+}
+.banner .banner__title--yellow {
+  color: #efa00b;
+}
+.banner p, .banner i {
+  color: white;
+  padding: 0 15px 0 0;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

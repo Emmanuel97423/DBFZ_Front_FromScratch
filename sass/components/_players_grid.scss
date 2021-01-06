@@ -1,0 +1,42 @@
+#player__checkin {
+    padding: 60px 0 0 20px;
+    background-color: $color-bottom-box;
+    width:100%;
+}
+
+.grid__player--title {
+
+    text-transform: uppercase;
+    color:white;
+
+
+    
+}
+
+
+#output {
+    padding: 20px 100px 80px 100px;
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 60px 15px;
+    background-color: $color-bottom-box;
+    p {
+        justify-self: start;
+        align-self: center;
+        font-weight: bold;
+        color:white;
+    }
+    img {
+        align-self: end;
+        align-self: end;
+        border-right: 1px solid white;
+        padding: 0 30px 0 0;
+        align-self: center;
+        width:150px;
+    }
+
+    
+
+
+}
