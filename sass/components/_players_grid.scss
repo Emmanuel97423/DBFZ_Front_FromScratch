@@ -15,7 +15,7 @@
 
 
 #output {
-    padding: 20px 100px 80px 100px;
+    padding: 20px 100px 80px 150px;
     width: 100%;
     display:grid;
     grid-template-columns: repeat(10, 1fr);
@@ -36,7 +36,9 @@
         width:150px;
     }
 
-    
 
-
+}
+#grid__classement {
+    display:grid;
+    grid-template-columns: repeat(2,1fr)
 }
