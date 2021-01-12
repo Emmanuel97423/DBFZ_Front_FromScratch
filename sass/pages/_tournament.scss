@@ -33,6 +33,7 @@ tournament {
         margin: 0 0 20px 0;
         padding:20px;
         background-color: $color-secondary;
+        letter-spacing: 1.5px;
         
               }
   }
@@ -42,13 +43,7 @@ tournament {
     box-shadow: $box-shadow;
 
 }  
-.grid__infos--classement {
-    > p {
-        padding: 2px;
-        border: 1px solid $color-dark-blue;
-        padding: 7px 9px 7px 10px
-    }
-}
+
 
 
 

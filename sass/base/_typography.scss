@@ -4,7 +4,7 @@ html {
     font-family: 'Open Sans',sans-serif;
 }
 h1 {
-    position: relative;
+    
     font-family: 'Montserrat';
     letter-spacing:2px;
     font-weight: 900;  
@@ -12,4 +12,12 @@ h1 {
 }
 html a {
     text-decoration:none;
+}
+p,li,span,h2,h3,h4{
+    font-family: 'Montserrat';
+
+ 
+}
+li {
+    list-style:none;
 }

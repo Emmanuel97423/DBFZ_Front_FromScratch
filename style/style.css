@@ -4,7 +4,6 @@ html {
 }
 
 h1 {
-  position: relative;
   font-family: "Montserrat";
   letter-spacing: 2px;
   font-weight: 900;
@@ -12,6 +11,14 @@ h1 {
 
 html a {
   text-decoration: none;
+}
+
+p, li, span, h2, h3, h4 {
+  font-family: "Montserrat";
+}
+
+li {
+  list-style: none;
 }
 
 .blurred-button-container {
@@ -405,6 +412,23 @@ article {
   color: #ff660e;
 }
 
+.box__tournament--link {
+  width: 100%;
+}
+.box__tournament--link > p {
+  margin: 30px 20px 25px 20px;
+  padding: 15px 7px;
+  background-color: #f5cc00;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -629,18 +653,13 @@ tournament {
   margin: 0 0 20px 0;
   padding: 20px;
   background-color: #efa00b;
+  letter-spacing: 1.5px;
 }
 
 .live__stream--tournament {
   width: 100%;
   height: 450px;
   box-shadow: 4px 4px 14px 4px;
-}
-
-.grid__infos--classement > p {
-  padding: 2px;
-  border: 1px solid #000814;
-  padding: 7px 9px 7px 10px;
 }
 
 #player__checkin {
@@ -699,11 +718,10 @@ tournament {
   align-self: center;
 }
 .grid__infos li {
-  font-weight: bold;
   margin: 0 0 8px 0;
 }
 .grid__infos .label {
-  font-weight: bold;
+  font-weight: 600;
 }
 .grid__infos--reglement--text, .grid__infos--mode--text, .grid__infos--system--text {
   justify-self: start;
@@ -716,16 +734,16 @@ tournament {
 }
 .banner h3 {
   font-size: 30px;
-  color: white;
+  color: #08043d;
   text-transform: uppercase;
 }
 .banner h2 {
   font-size: 50px;
-  color: white;
+  color: #08043d;
   text-transform: uppercase;
 }
 .banner .banner__title--yellow {
-  color: #efa00b;
+  color: #070e6f;
 }
 .banner p, .banner i {
   padding: 0 15px 0 0;
