@@ -62,7 +62,7 @@ fetch("https://api.smash.gg/gql/alpha", {
           //Avatar du joueur
         let avatarInfos = document.getElementById('output');
         let newAvatar = document.createElement('img');
-        newAvatar.src = "../img/avatar.png";
+        newAvatar.src = "img/avatar.png";
         newAvatar.classList.toggle("gamer__avatar");
        
         avatarInfos.appendChild(newAvatar);
